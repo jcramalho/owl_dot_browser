@@ -51,7 +51,7 @@ router.get('/:id', (req, res,next)=>{
             for(j in myData){
                 for(k in myData[j]){
                     var l = myData[j][k].slice(0,40)
-                    dot += 'f'+j+k+' [label="'+l+'",href="http://localhost:7777/'+l+'"];\n'
+                    dot += 'f'+j+k+' [label="'+l+'",href="https://owl-dot-browser.herokuapp.com/'+l+'"];\n'
                     dot += 'start -> f'+j+k+' [label="'+j+'"];\n'
                 }
             }
