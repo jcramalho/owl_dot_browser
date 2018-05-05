@@ -3,8 +3,8 @@ var router = express.Router()
 
 const SparqlClient = require('sparql-client-2');
 const SPARQL = SparqlClient.SPARQL;
-const endpoint = 'http://localhost:7200/repositories/clav20180505'
-const myupdateEndpoint = 'http://localhost:7200/repositories/clav20180505/statements'
+const endpoint = 'http://epl.di.uminho.pt:40003/repositories/clav20180505'
+const myupdateEndpoint = 'http://epl.di.uminho.pt:40003/repositories/clav20180505/statements'
 
 var client = new SparqlClient( endpoint, {updateEndpoint: myupdateEndpoint, 
                                           defaultParameters: {format: 'json'}})
